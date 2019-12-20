@@ -1,0 +1,6 @@
+framework module Pods_MKStudyTests {
+  umbrella header "Pods-MKStudyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

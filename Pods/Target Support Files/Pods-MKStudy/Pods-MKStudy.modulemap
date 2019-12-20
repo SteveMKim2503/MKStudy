@@ -1,0 +1,6 @@
+framework module Pods_MKStudy {
+  umbrella header "Pods-MKStudy-umbrella.h"
+
+  export *
+  module * { export * }
+}
