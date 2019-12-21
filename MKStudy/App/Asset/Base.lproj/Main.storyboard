@@ -60,11 +60,14 @@
                                 <rect key="frame" x="8" y="44" width="398" height="798"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QJb-II-GTs">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNQ-zg-1Ch">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                                <state key="normal" title="Add View"/>
+                                                <connections>
+                                                    <action selector="actionAddView:" destination="ynn-Wo-9x0" eventType="touchUpInside" id="5Ia-Sd-E0q"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -74,9 +77,10 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="QJb-II-GTs" firstAttribute="width" secondItem="Sry-Oj-9rZ" secondAttribute="width" id="0u3-ex-rVO"/>
                                     <constraint firstAttribute="bottom" secondItem="QJb-II-GTs" secondAttribute="bottom" id="CZE-hJ-fLc"/>
-                                    <constraint firstAttribute="trailing" secondItem="QJb-II-GTs" secondAttribute="trailing" id="Htr-lv-NuC"/>
-                                    <constraint firstItem="QJb-II-GTs" firstAttribute="leading" secondItem="Sry-Oj-9rZ" secondAttribute="leading" id="Jch-7C-ENN"/>
+                                    <constraint firstAttribute="trailing" secondItem="QJb-II-GTs" secondAttribute="trailing" id="Lxv-Xt-zNN"/>
+                                    <constraint firstItem="QJb-II-GTs" firstAttribute="leading" secondItem="Sry-Oj-9rZ" secondAttribute="leading" id="dpD-4T-bem"/>
                                     <constraint firstItem="QJb-II-GTs" firstAttribute="top" secondItem="Sry-Oj-9rZ" secondAttribute="top" id="m0j-kW-Jza"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="6Tn-pq-2M5"/>
@@ -92,6 +96,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sf8-W7-1sP"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Sry-Oj-9rZ" id="MDc-Ax-wr5"/>
+                        <outlet property="stackView" destination="QJb-II-GTs" id="jSL-8t-uA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCL-ii-bif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
