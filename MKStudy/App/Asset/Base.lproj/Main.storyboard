@@ -65,9 +65,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNQ-zg-1Ch">
                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
                                                 <state key="normal" title="Add View"/>
-                                                <connections>
-                                                    <action selector="actionAddView:" destination="ynn-Wo-9x0" eventType="touchUpInside" id="5Ia-Sd-E0q"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -97,6 +94,7 @@
                         <viewLayoutGuide key="safeArea" id="Sf8-W7-1sP"/>
                     </view>
                     <connections>
+                        <outlet property="addViewButton" destination="FNQ-zg-1Ch" id="79n-6e-0hN"/>
                         <outlet property="scrollView" destination="Sry-Oj-9rZ" id="MDc-Ax-wr5"/>
                         <outlet property="stackView" destination="QJb-II-GTs" id="jSL-8t-uA4"/>
                     </connections>
