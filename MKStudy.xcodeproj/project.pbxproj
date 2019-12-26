@@ -22,6 +22,7 @@
 		4DA4611423ACAAAE0085CDED /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */; };
 		4DA4611623ACB6BD0085CDED /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4611523ACB6BD0085CDED /* StackViewViewController.swift */; };
 		4DB5AFE923AE4367005BE26C /* StackViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */; };
+		4DD9A97A23B48C6F004AA328 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DD9A97923B48C6F004AA328 /* GoogleService-Info.plist */; };
 		55F9D7F0706F82A1231A7243 /* Pods_MKStudy_MKStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33330808A96ACE3BDA0AB9AC /* Pods_MKStudy_MKStudyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
 		4DA4611523ACB6BD0085CDED /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
 		4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewReactor.swift; sourceTree = "<group>"; };
+		4DD9A97923B48C6F004AA328 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DEF66FF245D2D4FBD858426 /* Pods_MKStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F50F83626365B212649638 /* Pods-MKStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKStudy.debug.xcconfig"; path = "Target Support Files/Pods-MKStudy/Pods-MKStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		C487DFEB396A6AC7EEE62D35 /* Pods-MKStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKStudy.release.xcconfig"; path = "Target Support Files/Pods-MKStudy/Pods-MKStudy.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */,
 				4D9CBBC923ACA53E0072FD12 /* SceneDelegate.swift */,
 				4D9CBBD523ACA5420072FD12 /* Info.plist */,
+				4DD9A97923B48C6F004AA328 /* GoogleService-Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9CBBD423ACA5420072FD12 /* LaunchScreen.storyboard in Resources */,
+				4DD9A97A23B48C6F004AA328 /* GoogleService-Info.plist in Resources */,
 				4D9CBBD123ACA5420072FD12 /* Assets.xcassets in Resources */,
 				4D9CBBCF23ACA53E0072FD12 /* Main.storyboard in Resources */,
 			);

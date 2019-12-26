@@ -10,6 +10,8 @@ target 'MKStudy' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'ReactorKit'
+  
+  pod 'Firebase/Core'
 
   target 'MKStudyTests' do
     inherit! :search_paths
