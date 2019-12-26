@@ -1,5 +1,5 @@
 //
-//  stackCellModel.swift
+//  StackCellModel.swift
 //  MKStudy
 //
 //  Created by Minkwan Kim on 2019/12/21.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct stackCellModel {
-    var date : String
+struct StackCellModel {
+    var date   : String
     var number : String
     
     init() {
@@ -27,8 +27,8 @@ struct stackCellModel {
     }
 }
 
-extension stackCellModel: Equatable {
-    static func == (lhs: stackCellModel, rhs: stackCellModel) -> Bool {
+extension StackCellModel: Equatable {
+    static func == (lhs: StackCellModel, rhs: StackCellModel) -> Bool {
         return lhs.date == rhs.date &&
             lhs.number == rhs.number
     }

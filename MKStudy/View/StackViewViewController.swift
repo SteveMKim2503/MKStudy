@@ -62,20 +62,19 @@ class StackViewViewController: UIViewController, StoryboardView {
         
         // state
         reactor.state.map { $0.entryInfo }
+            .asDriver(onErrorJustReturn: nil)
             .filter { $0 != nil }
             .map { $0! }
-            .subscribe(onNext: { [weak self] (date, number) in
+            .drive(onNext: { [weak self] (date, number) in
                 guard let `self` = self else { return }
                 
                 let entryInfo = self.createEntry(date: date, number: number)
                 let newView = entryInfo.view
                 entryInfo.deleteEvent
-                    .map { _ in
-                        Reactor.Action.deleteView(newView)
-                        
-                }
+                    .observeOn(MainScheduler.asyncInstance)
+                    .map { _ in Reactor.Action.deleteView(newView) }
                     .bind(to: reactor.action)
-                    .dispose()
+                    .disposed(by: self.disposeBag)
                 
                 let stack = self.stackView
                 let index = self.stackView.arrangedSubviews.count - 1
@@ -91,15 +90,16 @@ class StackViewViewController: UIViewController, StoryboardView {
                 }
                 
                 Observable.just(1)
+                    .observeOn(MainScheduler.asyncInstance)
                     .map { _ in Reactor.Action.registerView(newView) }
                     .bind(to: reactor.action)
-                    .dispose()
+                    .disposed(by: self.disposeBag)
                 
             })
             .disposed(by: self.disposeBag)
         
         reactor.state.map { $0.cellToBeDeleted }
-        .distinctUntilChanged()
+            .distinctUntilChanged()
             .filter { $0 != nil }
             .map { $0! }
             .subscribe(onNext: { self.deleteStackView(view: $0) })
@@ -124,11 +124,8 @@ private extension StackViewViewController {
         let deleteButton = UIButton(type: .roundedRect)
         deleteButton.setTitle("Delete", for: .normal)
         let deleteEvent = deleteButton.rx.tap
-        deleteEvent.subscribe {
-            NSLog("MK test")
-        }
-        .disposed(by: self.disposeBag)
-//        deleteButton.addTarget(self, action: #selector(self.deleteStackView(sender:)), for: .touchUpInside)
+        deleteEvent.subscribe(onNext: { MKLog("stackView delete button tapped") })
+            .disposed(by: self.disposeBag)
         
         stack.addArrangedSubview(dateLabel)
         stack.addArrangedSubview(numberLabel)
@@ -136,25 +133,6 @@ private extension StackViewViewController {
         
         return (stack, deleteEvent)
     }
-    
-//    func randomHexQuad() -> String {
-//        return NSString(format: "%X%X%X%X",
-//                        arc4random() % 16,
-//                        arc4random() % 16,
-//                        arc4random() % 16,
-//                        arc4random() % 16
-//            ) as String
-//    }
-//
-//    @objc func deleteStackView(sender: UIButton) {
-//        if let view = sender.superview {
-//            UIView.animate(withDuration: 0.25, animations: {
-//                view.isHidden = true
-//            }) { (success) in
-//                view.removeFromSuperview()
-//            }
-//        }
-//    }
     
     func deleteStackView(view: UIStackView) {
         UIView.animate(withDuration: 0.25, animations: {
@@ -172,4 +150,8 @@ extension StackViewViewController: initWithStoryboardDelegate {
         vc.reactor = StackViewReactor()
         return vc
     }
+}
+
+func MKLog(_ format: String, _ args: CVarArg...) {
+    NSLog(String(format: "[MKLog](\(#file.components(separatedBy: "/").last ?? ""))(\(#line)) %@", format), args)
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1CD92CFDCA8C0C7946350891 /* Pods_MKStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEF66FF245D2D4FBD858426 /* Pods_MKStudyTests.framework */; };
 		4CD64A5150677FF1E34C296B /* Pods_MKStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254CB09EDC2EFB66F0912E7D /* Pods_MKStudy.framework */; };
-		4D94EC8423AE49C700F844AA /* stackCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94EC8323AE49C700F844AA /* stackCellModel.swift */; };
+		4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94EC8323AE49C700F844AA /* StackCellModel.swift */; };
 		4D9CBBC823ACA53E0072FD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */; };
 		4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC923ACA53E0072FD12 /* SceneDelegate.swift */; };
 		4D9CBBCC23ACA53E0072FD12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBCB23ACA53E0072FD12 /* ViewController.swift */; };
@@ -47,7 +47,7 @@
 		254CB09EDC2EFB66F0912E7D /* Pods_MKStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCF6FEBC9D4B8D90F67B227 /* Pods-MKStudy-MKStudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKStudy-MKStudyUITests.debug.xcconfig"; path = "Target Support Files/Pods-MKStudy-MKStudyUITests/Pods-MKStudy-MKStudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		33330808A96ACE3BDA0AB9AC /* Pods_MKStudy_MKStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKStudy_MKStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D94EC8323AE49C700F844AA /* stackCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stackCellModel.swift; sourceTree = "<group>"; };
+		4D94EC8323AE49C700F844AA /* StackCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCellModel.swift; sourceTree = "<group>"; };
 		4D9CBBC423ACA53E0072FD12 /* MKStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D9CBBC923ACA53E0072FD12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 			children = (
 				4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */,
 				4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */,
-				4D94EC8323AE49C700F844AA /* stackCellModel.swift */,
+				4D94EC8323AE49C700F844AA /* StackCellModel.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 				4DA4611423ACAAAE0085CDED /* MainViewReactor.swift in Sources */,
 				4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */,
 				4DA4611623ACB6BD0085CDED /* StackViewViewController.swift in Sources */,
-				4D94EC8423AE49C700F844AA /* stackCellModel.swift in Sources */,
+				4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */,
 				4DA4610E23ACA9050085CDED /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

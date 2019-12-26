@@ -20,12 +20,12 @@ class StackViewReactor: Reactor {
     }
     
     enum Mutation {
-        case setEntryInfo(stackCellModel?)
+        case setEntryInfo(StackCellModel?)
         case setCellToBeDeleted(UIStackView?)
     }
     
     struct State {
-        var entryInfo : (date: String, number: String)?
+        var entryInfo       : (date : String, number : String)?
         var cellToBeDeleted : UIStackView?
     }
     
@@ -35,8 +35,8 @@ class StackViewReactor: Reactor {
     
     init () {
         self.initialState = State(
-            entryInfo: nil,
-            cellToBeDeleted: nil
+            entryInfo       : nil,
+            cellToBeDeleted : nil
         )
     }
     
@@ -44,7 +44,7 @@ class StackViewReactor: Reactor {
         switch action {
             
         case .addView:
-            let cellModel = stackCellModel()
+            let cellModel = StackCellModel()
             return Observable.concat([
                 Observable.just(Mutation.setEntryInfo(cellModel)),
                 Observable.just(Mutation.setEntryInfo(nil)),
