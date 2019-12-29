@@ -20,14 +20,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "666E8A38-9791-40EA-89F5-EEB7D40CB819 - 36f78a96d9957f9a"
+                  uuid = "666E8A38-9791-40EA-89F5-EEB7D40CB819 - dbf4129bcd2b9316"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MKStudy.StackViewReactor.mutate(action: MKStudy.StackViewReactor.Action) -&gt; RxSwift.Observable&lt;MKStudy.StackViewReactor.Mutation&gt;"
                   moduleName = "MKStudy"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mk/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/0.GitHub/MKStudy/MKStudy/Reactor/StackViewReactor.swift"
+                  urlString = "file:///Users/MK/Documents/GitHub/MKStudy/MKStudy/Reactor/StackViewReactor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "58"
@@ -35,14 +35,14 @@
                   offsetFromSymbolStart = "1181">
                </Location>
                <Location
-                  uuid = "666E8A38-9791-40EA-89F5-EEB7D40CB819 - b0cd705624d9e546"
+                  uuid = "666E8A38-9791-40EA-89F5-EEB7D40CB819 - 5dcee85b306709ca"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__C.UIStackView) -&gt; Swift.Bool in MKStudy.StackViewReactor.mutate(action: MKStudy.StackViewReactor.Action) -&gt; RxSwift.Observable&lt;MKStudy.StackViewReactor.Mutation&gt;"
                   moduleName = "MKStudy"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mk/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/0.GitHub/MKStudy/MKStudy/Reactor/StackViewReactor.swift"
+                  urlString = "file:///Users/MK/Documents/GitHub/MKStudy/MKStudy/Reactor/StackViewReactor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "58"
@@ -55,32 +55,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FE65D24F-B5E1-4E38-BFDD-5D02C7E75297"
+            uuid = "02F997A5-E3CF-4BF1-8E94-98EC19AA84D3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MKStudy/View/StackViewViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "createEntry(date:number:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5CD3D315-866C-42B3-8BDF-85349AD16A7F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MKStudy/Reactor/StackViewReactor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "mutate(action:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "bind(reactor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

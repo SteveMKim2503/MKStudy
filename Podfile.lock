@@ -64,18 +64,24 @@ PODS:
   - nanopb/encode (0.3.9011)
   - ReactorKit (2.0.1):
     - RxSwift (~> 5.0)
+  - RxBlocking (5.0.1):
+    - RxSwift (~> 5)
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
+  - RxTest (5.0.1):
+    - RxSwift (~> 5)
 
 DEPENDENCIES:
   - Firebase/Core
   - ReactorKit
+  - RxBlocking
   - RxCocoa
   - RxSwift
+  - RxTest
 
 SPEC REPOS:
   trunk:
@@ -91,9 +97,11 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - ReactorKit
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
+    - RxTest
 
 SPEC CHECKSUMS:
   Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
@@ -108,10 +116,12 @@ SPEC CHECKSUMS:
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
+  RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
 
-PODFILE CHECKSUM: 5f49364b9c73297a8998e8e6bd11e5bf42cf0172
+PODFILE CHECKSUM: 33986286d054ffcfa85a39d0136548496a1f6c1f
 
 COCOAPODS: 1.8.4
