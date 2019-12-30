@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1CD92CFDCA8C0C7946350891 /* Pods_MKStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEF66FF245D2D4FBD858426 /* Pods_MKStudyTests.framework */; };
 		4CD64A5150677FF1E34C296B /* Pods_MKStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254CB09EDC2EFB66F0912E7D /* Pods_MKStudy.framework */; };
+		4D7536BD23BA472B005AE008 /* Rxswiftin4hoursReceiptViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536BB23BA472B005AE008 /* Rxswiftin4hoursReceiptViewReactor.swift */; };
+		4D7536BE23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536BC23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift */; };
+		4D7536C023BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536BF23BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift */; };
+		4D7536C223BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */; };
 		4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94EC8323AE49C700F844AA /* StackCellModel.swift */; };
 		4D9CBBC823ACA53E0072FD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */; };
 		4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC923ACA53E0072FD12 /* SceneDelegate.swift */; };
@@ -22,6 +26,9 @@
 		4DA4611423ACAAAE0085CDED /* MainViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */; };
 		4DA4611623ACB6BD0085CDED /* StackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4611523ACB6BD0085CDED /* StackViewViewController.swift */; };
 		4DB5AFE923AE4367005BE26C /* StackViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */; };
+		4DCB1F4523B84F17008DFB64 /* Rxswiftin4hoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB1F4423B84F17008DFB64 /* Rxswiftin4hoursViewController.swift */; };
+		4DCB1F4723B84F3C008DFB64 /* Rxswiftin4hoursViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB1F4623B84F3C008DFB64 /* Rxswiftin4hoursViewReactor.swift */; };
+		4DCB1F4923B8510E008DFB64 /* Rxswiftin4hours.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCB1F4823B8510E008DFB64 /* Rxswiftin4hours.storyboard */; };
 		4DD9A97A23B48C6F004AA328 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DD9A97923B48C6F004AA328 /* GoogleService-Info.plist */; };
 		55F9D7F0706F82A1231A7243 /* Pods_MKStudy_MKStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33330808A96ACE3BDA0AB9AC /* Pods_MKStudy_MKStudyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +54,10 @@
 		254CB09EDC2EFB66F0912E7D /* Pods_MKStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCF6FEBC9D4B8D90F67B227 /* Pods-MKStudy-MKStudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKStudy-MKStudyUITests.debug.xcconfig"; path = "Target Support Files/Pods-MKStudy-MKStudyUITests/Pods-MKStudy-MKStudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		33330808A96ACE3BDA0AB9AC /* Pods_MKStudy_MKStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKStudy_MKStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7536BB23BA472B005AE008 /* Rxswiftin4hoursReceiptViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursReceiptViewReactor.swift; sourceTree = "<group>"; };
+		4D7536BC23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursReceiptViewController.swift; sourceTree = "<group>"; };
+		4D7536BF23BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursMenuTableViewCell.swift; sourceTree = "<group>"; };
+		4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursMenuTableViewCellReactor.swift; sourceTree = "<group>"; };
 		4D94EC8323AE49C700F844AA /* StackCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCellModel.swift; sourceTree = "<group>"; };
 		4D9CBBC423ACA53E0072FD12 /* MKStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +77,9 @@
 		4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewReactor.swift; sourceTree = "<group>"; };
 		4DA4611523ACB6BD0085CDED /* StackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewViewController.swift; sourceTree = "<group>"; };
 		4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewReactor.swift; sourceTree = "<group>"; };
+		4DCB1F4423B84F17008DFB64 /* Rxswiftin4hoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursViewController.swift; sourceTree = "<group>"; };
+		4DCB1F4623B84F3C008DFB64 /* Rxswiftin4hoursViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursViewReactor.swift; sourceTree = "<group>"; };
+		4DCB1F4823B8510E008DFB64 /* Rxswiftin4hours.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rxswiftin4hours.storyboard; sourceTree = "<group>"; };
 		4DD9A97923B48C6F004AA328 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DEF66FF245D2D4FBD858426 /* Pods_MKStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F50F83626365B212649638 /* Pods-MKStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKStudy.debug.xcconfig"; path = "Target Support Files/Pods-MKStudy/Pods-MKStudy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +198,7 @@
 				4D9CBBCD23ACA53E0072FD12 /* Main.storyboard */,
 				4D9CBBD023ACA5420072FD12 /* Assets.xcassets */,
 				4D9CBBD223ACA5420072FD12 /* LaunchScreen.storyboard */,
+				4DCB1F4823B8510E008DFB64 /* Rxswiftin4hours.storyboard */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -191,9 +206,18 @@
 		4DA4611123ACA9600085CDED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4D94EC8323AE49C700F844AA /* StackCellModel.swift */,
 				4D9CBBCB23ACA53E0072FD12 /* ViewController.swift */,
 				4DA4610D23ACA9050085CDED /* MainViewController.swift */,
+				4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */,
 				4DA4611523ACB6BD0085CDED /* StackViewViewController.swift */,
+				4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */,
+				4DCB1F4423B84F17008DFB64 /* Rxswiftin4hoursViewController.swift */,
+				4DCB1F4623B84F3C008DFB64 /* Rxswiftin4hoursViewReactor.swift */,
+				4D7536BF23BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift */,
+				4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */,
+				4D7536BC23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift */,
+				4D7536BB23BA472B005AE008 /* Rxswiftin4hoursReceiptViewReactor.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,9 +225,6 @@
 		4DA4611223ACA96A0085CDED /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				4DA4611323ACAAAE0085CDED /* MainViewReactor.swift */,
-				4DB5AFE823AE4367005BE26C /* StackViewReactor.swift */,
-				4D94EC8323AE49C700F844AA /* StackCellModel.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -329,6 +350,7 @@
 			files = (
 				4D9CBBD423ACA5420072FD12 /* LaunchScreen.storyboard in Resources */,
 				4DD9A97A23B48C6F004AA328 /* GoogleService-Info.plist in Resources */,
+				4DCB1F4923B8510E008DFB64 /* Rxswiftin4hours.storyboard in Resources */,
 				4D9CBBD123ACA5420072FD12 /* Assets.xcassets in Resources */,
 				4D9CBBCF23ACA53E0072FD12 /* Main.storyboard in Resources */,
 			);
@@ -458,14 +480,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCB1F4523B84F17008DFB64 /* Rxswiftin4hoursViewController.swift in Sources */,
 				4D9CBBCC23ACA53E0072FD12 /* ViewController.swift in Sources */,
 				4DB5AFE923AE4367005BE26C /* StackViewReactor.swift in Sources */,
 				4D9CBBC823ACA53E0072FD12 /* AppDelegate.swift in Sources */,
+				4DCB1F4723B84F3C008DFB64 /* Rxswiftin4hoursViewReactor.swift in Sources */,
+				4D7536C223BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift in Sources */,
 				4DA4611423ACAAAE0085CDED /* MainViewReactor.swift in Sources */,
+				4D7536C023BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift in Sources */,
 				4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */,
 				4DA4611623ACB6BD0085CDED /* StackViewViewController.swift in Sources */,
 				4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */,
+				4D7536BD23BA472B005AE008 /* Rxswiftin4hoursReceiptViewReactor.swift in Sources */,
 				4DA4610E23ACA9050085CDED /* MainViewController.swift in Sources */,
+				4D7536BE23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -624,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -641,7 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MKStudy/App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,7 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MKStudy/App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

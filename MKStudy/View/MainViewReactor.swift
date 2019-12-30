@@ -19,10 +19,6 @@ struct MainMenuModel {
     var viewController : UIViewController
 }
 
-let menuStringList : [String] = [
-    "stackView"
-]
-
 class MainViewReactor: Reactor {
     
     enum Action {
@@ -34,7 +30,7 @@ class MainViewReactor: Reactor {
     }
     
     struct State {
-        var menus : [MainMenuModel]
+        var menus                : [MainMenuModel]
         var viewControllerTomove : UIViewController?
     }
     
@@ -42,9 +38,15 @@ class MainViewReactor: Reactor {
     
     
     init() {
-        let vc = StackViewViewController.initWithStoryboard()
         let menus = [
-            MainMenuModel(name: "stackView", viewController: vc)
+            MainMenuModel(
+                name           : "stackView",
+                viewController : StackViewViewController.initWithStoryboard()
+            ),
+            MainMenuModel(
+                name: "rxswiftin4hours_S2",
+                viewController: Rxswiftin4hoursViewController.initWithStoryboard()
+            )
         ]
         self.initialState = State(
             menus: menus
