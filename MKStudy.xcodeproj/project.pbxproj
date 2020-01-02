@@ -13,6 +13,8 @@
 		4D7536BE23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536BC23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift */; };
 		4D7536C023BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536BF23BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift */; };
 		4D7536C223BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */; };
+		4D7536C723BE1F67005AE008 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C623BE1F67005AE008 /* MenuItem.swift */; };
+		4D7536C923BE2007005AE008 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C823BE2007005AE008 /* APIService.swift */; };
 		4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94EC8323AE49C700F844AA /* StackCellModel.swift */; };
 		4D9CBBC823ACA53E0072FD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */; };
 		4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC923ACA53E0072FD12 /* SceneDelegate.swift */; };
@@ -58,6 +60,8 @@
 		4D7536BC23BA472B005AE008 /* Rxswiftin4hoursReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursReceiptViewController.swift; sourceTree = "<group>"; };
 		4D7536BF23BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursMenuTableViewCell.swift; sourceTree = "<group>"; };
 		4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursMenuTableViewCellReactor.swift; sourceTree = "<group>"; };
+		4D7536C623BE1F67005AE008 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		4D7536C823BE2007005AE008 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4D94EC8323AE49C700F844AA /* StackCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCellModel.swift; sourceTree = "<group>"; };
 		4D9CBBC423ACA53E0072FD12 /* MKStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4D7536C323BE1F1D005AE008 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D7536C623BE1F67005AE008 /* MenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D7536C423BE1F31005AE008 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4D7536C523BE1F3E005AE008 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4D7536C823BE2007005AE008 /* APIService.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		4D9CBBBB23ACA53E0072FD12 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +182,9 @@
 		4D9CBBC623ACA53E0072FD12 /* MKStudy */ = {
 			isa = PBXGroup;
 			children = (
+				4D7536C323BE1F1D005AE008 /* Model */,
+				4D7536C523BE1F3E005AE008 /* Domain */,
+				4D7536C423BE1F31005AE008 /* Repository */,
 				4DA4610F23ACA91D0085CDED /* App */,
 				4DA4611223ACA96A0085CDED /* Reactor */,
 				4DA4611123ACA9600085CDED /* View */,
@@ -486,9 +516,11 @@
 				4D9CBBC823ACA53E0072FD12 /* AppDelegate.swift in Sources */,
 				4DCB1F4723B84F3C008DFB64 /* Rxswiftin4hoursViewReactor.swift in Sources */,
 				4D7536C223BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift in Sources */,
+				4D7536C923BE2007005AE008 /* APIService.swift in Sources */,
 				4DA4611423ACAAAE0085CDED /* MainViewReactor.swift in Sources */,
 				4D7536C023BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift in Sources */,
 				4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */,
+				4D7536C723BE1F67005AE008 /* MenuItem.swift in Sources */,
 				4DA4611623ACB6BD0085CDED /* StackViewViewController.swift in Sources */,
 				4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */,
 				4D7536BD23BA472B005AE008 /* Rxswiftin4hoursReceiptViewReactor.swift in Sources */,

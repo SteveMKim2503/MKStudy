@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.1)
   - Firebase/Core (6.14.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 6.1.7)
@@ -57,6 +58,11 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.4.0):
     - GoogleUtilities/Logger
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -64,6 +70,7 @@ PODS:
   - nanopb/encode (0.3.9011)
   - ReactorKit (2.0.1):
     - RxSwift (~> 5.0)
+  - Result (4.1.0)
   - RxBlocking (5.0.1):
     - RxSwift (~> 5)
   - RxCocoa (5.0.1):
@@ -77,6 +84,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Core
+  - Moya
   - ReactorKit
   - RxBlocking
   - RxCocoa
@@ -85,6 +93,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -95,8 +104,10 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - Moya
     - nanopb
     - ReactorKit
+    - Result
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -104,6 +115,7 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
   FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
   FirebaseCore: 632e05cc5e1199d9147122c16d92305eb04c34bd
@@ -114,14 +126,16 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
   GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
 
-PODFILE CHECKSUM: 33986286d054ffcfa85a39d0136548496a1f6c1f
+PODFILE CHECKSUM: c93617d368d208a7e927317c97a53976bf9d600b
 
 COCOAPODS: 1.8.4

@@ -11,6 +11,8 @@ target 'MKStudy' do
   pod 'RxCocoa'
   pod 'ReactorKit'
   
+  pod 'Moya'
+  
   pod 'Firebase/Core'
   
   # for Test
