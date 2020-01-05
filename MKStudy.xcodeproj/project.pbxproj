@@ -15,6 +15,7 @@
 		4D7536C223BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */; };
 		4D7536C723BE1F67005AE008 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C623BE1F67005AE008 /* MenuItem.swift */; };
 		4D7536C923BE2007005AE008 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536C823BE2007005AE008 /* APIService.swift */; };
+		4D7536CB23C22E11005AE008 /* MenuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7536CA23C22E11005AE008 /* MenuStore.swift */; };
 		4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94EC8323AE49C700F844AA /* StackCellModel.swift */; };
 		4D9CBBC823ACA53E0072FD12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */; };
 		4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9CBBC923ACA53E0072FD12 /* SceneDelegate.swift */; };
@@ -62,6 +63,7 @@
 		4D7536C123BA4A00005AE008 /* Rxswiftin4hoursMenuTableViewCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rxswiftin4hoursMenuTableViewCellReactor.swift; sourceTree = "<group>"; };
 		4D7536C623BE1F67005AE008 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		4D7536C823BE2007005AE008 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4D7536CA23C22E11005AE008 /* MenuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStore.swift; sourceTree = "<group>"; };
 		4D94EC8323AE49C700F844AA /* StackCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCellModel.swift; sourceTree = "<group>"; };
 		4D9CBBC423ACA53E0072FD12 /* MKStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9CBBC723ACA53E0072FD12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		4D7536C423BE1F31005AE008 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				4D7536C823BE2007005AE008 /* APIService.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 		4D7536C523BE1F3E005AE008 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				4D7536C823BE2007005AE008 /* APIService.swift */,
+				4D7536CA23C22E11005AE008 /* MenuStore.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -183,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				4D7536C323BE1F1D005AE008 /* Model */,
-				4D7536C523BE1F3E005AE008 /* Domain */,
 				4D7536C423BE1F31005AE008 /* Repository */,
+				4D7536C523BE1F3E005AE008 /* Domain */,
 				4DA4610F23ACA91D0085CDED /* App */,
 				4DA4611223ACA96A0085CDED /* Reactor */,
 				4DA4611123ACA9600085CDED /* View */,
@@ -520,6 +523,7 @@
 				4DA4611423ACAAAE0085CDED /* MainViewReactor.swift in Sources */,
 				4D7536C023BA4841005AE008 /* Rxswiftin4hoursMenuTableViewCell.swift in Sources */,
 				4D9CBBCA23ACA53E0072FD12 /* SceneDelegate.swift in Sources */,
+				4D7536CB23C22E11005AE008 /* MenuStore.swift in Sources */,
 				4D7536C723BE1F67005AE008 /* MenuItem.swift in Sources */,
 				4DA4611623ACB6BD0085CDED /* StackViewViewController.swift in Sources */,
 				4D94EC8423AE49C700F844AA /* StackCellModel.swift in Sources */,
