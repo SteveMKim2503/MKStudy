@@ -37,16 +37,14 @@
                BlueprintName = "MKStudyTests"
                ReferencedContainer = "container:MKStudy.xcodeproj">
             </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D9CBBE423ACA5420072FD12"
-               BuildableName = "MKStudyUITests.xctest"
-               BlueprintName = "MKStudyUITests"
-               ReferencedContainer = "container:MKStudy.xcodeproj">
-            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "MKStudyTests">
+               </Test>
+               <Test
+                  Identifier = "Rxswiftin4hoursViewControllerTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

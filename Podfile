@@ -15,13 +15,13 @@ target 'MKStudy' do
   
   pod 'Firebase/Core'
   
-  # for Test
-  pod 'RxTest'
-  pod 'RxBlocking'
-
   target 'MKStudyTests' do
     inherit! :search_paths
     # Pods for testing
+
+    pod 'RxTest'
+    pod 'RxBlocking'
+    
   end
 
   target 'MKStudyUITests' do

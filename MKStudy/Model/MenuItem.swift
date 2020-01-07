@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MenuItem {
+struct MenuItem: Decodable {
     var name : String
     var price : Int
 }
