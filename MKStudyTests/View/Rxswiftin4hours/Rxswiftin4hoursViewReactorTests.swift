@@ -86,6 +86,7 @@ class MockMenuStore: MenuFetchable {
             ]
             
             observer.onNext(menus)
+            observer.onCompleted()
             
             return Disposables.create()
         }
@@ -117,95 +118,35 @@ class Rxswiftin4hoursViewReactorTests: XCTestCase {
             .disposed(by: disposeBag)
     }
     
-    func testIsLoading2() {
-        // given
-        let menuService = MockMenuStore()
-        let reactor = Rxswiftin4hoursViewReactor(menuService: menuService)
-        let disposeBag = DisposeBag()
-        
-        // when
-        XCTAssertEqual(reactor.currentState.isLoading, false)
-        reactor.action.onNext(.fetchData)
-        
-        let isloading = try! reactor.state.map { $0.isLoading }.toBlocking().first()!
-        let isloading2 = try! reactor.state.map { $0.isLoading }.toBlocking(timeout: 20).last()!
-        XCTAssertEqual(isloading, true)
-        XCTAssertEqual(isloading2, false)
-        
-    }
-    
     func testIsLoading() {
+        // given
         let menuService = MockMenuStore()
         let reactor = Rxswiftin4hoursViewReactor(menuService: menuService)
         let disposeBag = DisposeBag()
         
-        // given
-        XCTAssertEqual(reactor.currentState.isLoading, false)
-        
-        let scheduler = TestScheduler(initialClock: 0)
-//        let xs = scheduler.createHotObservable([
-//            .next(0, reactor.state.map { $0.isLoading }.,
-//            .next(10, ()),
-//            .next(20, ()),
-//            .completed(100)
-//        ])
-        
-//        let isLoading = scheduler.createObserver(Bool.self)
-//
-//        reactor.state.map { $0.isLoading }
-//            .debug()
-//            .bind(to:
-//                isLoading
-//        )
-//            .disposed(by: disposeBag)
         // when
+        let scheduler = TestScheduler(initialClock: 0)
+        let isLoading = scheduler.createObserver(Bool.self)
+
+        reactor.state.map { $0.isLoading }
+            .bind(to: isLoading)
+            .disposed(by: disposeBag)
         
-//        reactor.action.onNext(.fetchData)
-//
-//        scheduler.start()
-        
+        scheduler.scheduleAt(10) {
+            reactor.action.onNext(.fetchData)
+        }
+
+        scheduler.start()
+
+        // then
         let expected = Recorded.events([
             .next(0, false),
             .next(10, true),
-            .next(20, false)
+            .next(10, true),
+            .next(10, false)
         ])
         
-        
-        SharingScheduler.mock(scheduler: scheduler) {
-            let isLoading = scheduler.createObserver(Bool.self)
-            reactor.state.map { $0.isLoading }
-                .debug()
-                .bind(to: isLoading)
-                .disposed(by: disposeBag)
-            scheduler.start()
-            
-            XCTAssertEqual(isLoading.events, expected)
-        }
-        
-        
-        
+        XCTAssertEqual(isLoading.events, expected)
     }
-    
-    
-    
-//    override func setUp() {
-//        // Put setup code here. This method is called before the invocation of each test method in the class.
-//    }
-//
-//    override func tearDown() {
-//        // Put teardown code here. This method is called after the invocation of each test method in the class.
-//    }
-//
-//    func testExample() {
-//        // This is an example of a functional test case.
-//        // Use XCTAssert and related functions to verify your tests produce the correct results.
-//    }
-//
-//    func testPerformanceExample() {
-//        // This is an example of a performance test case.
-//        self.measure {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
 
 }
